@@ -40,8 +40,8 @@ class MyPaintApp(App):
     def clear_canvas(self, obj):
         self.painter.canvas.clear()
     def change_line_color(self, slider, value):
-        hue = value  # slider value ranges from 0 to 1, so we can use it as the hue value
-        self.painter.line_color = (hue, 1, 1)  # set the line color to an HSV color
+        ai = value
+        self.painter.line_color = (ai, 1, 1)
     def change_line_thickness(self, slider, value):
         self.painter.line_thickness = value  # change line thickness
 if __name__ == '__main__':
